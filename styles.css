@@ -2,8 +2,8 @@ body {
   background-color: Indigo;
   margin: 0;
   padding: 0;
+ 
 }
-
 
 ul {
   list-style-type: none;
@@ -31,6 +31,78 @@ ul li a:hover {
 
 h1 {
   text-align: center;
-  font-size: 10px;
+  font-size: 50px;
   color: white;
+}
+
+.container {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 600px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+input, textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: 0.3s;
+    outline: none;
+    box-sizing: border-box;
+}
+
+button {
+    background: #000000;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+    background: #3a0148;
+    transform: scale(1.05);
+}
+
+.posts-container {
+    margin-top: 20px;
+}
+
+.post {
+    background: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 5px solid #000000;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.delete {
+    background: #ff4d4d;
+}
+
+.delete:hover {
+    background: #e60000;
 }
