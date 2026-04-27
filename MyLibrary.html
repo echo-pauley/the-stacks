@@ -1,15 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<body>
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Library | The Stacks</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<ul>
-  <li><a href="home.html">Home</a></li>
-  <li><a href="post.html">Post</a></li>
-  <li><a href="MyLibrary.html">My Library</a></li>
-  <li><a href="profile.html">Profile</a></li>
-</ul>
-<h1>My Library</h1>
+<body class="home-page">
+  <div class="home-shell">
+    <header class="home-topbar">
+      <div class="home-left-spacer" aria-hidden="true"></div>
+      <form class="home-search" role="search">
+        <input type="search" placeholder="Find anything">
+      </form>
+      <div class="home-top-right">
+        <p class="home-brand">The Stacks</p>
+        <div class="home-user-icon" aria-label="User profile placeholder">U</div>
+      </div>
+    </header>
+    <aside class="home-sidebar" aria-label="Primary">
+      <a href="home.html">Home</a>
+      <a href="post.html">Post</a>
+      <a href="MyLibrary.html">My Library</a>
+      <a href="profile.html">Profile</a>
+    </aside>
+    <main class="home-content">
+      <section class="home-feed-card">
+        <h2>My Library</h2>
+        <section class="book-grid" aria-label="Saved books">
+          <article class="book-card">
+            <img
+              src="https://covers.openlibrary.org/b/isbn/013409266X-L.jpg"
+              alt="Cover of Computer Systems: A Programmer's Perspective (3rd Edition)"
+            >
+            <h2>Computer Systems: A Programmer's Perspective (3rd Edition)</h2>
+            <p>ISBN-10: 013409266X</p>
+          </article>
+        </section>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
